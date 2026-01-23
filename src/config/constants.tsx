@@ -2,7 +2,7 @@ import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
 import { LuGraduationCap } from "react-icons/lu";
-import { ExperienceProps, SocialLinksType } from "./types";
+import { ExperienceProps, SocialLinksType, SkillType } from "./types";
 export const FEATURED_PROJECTS = [
   {
     title: "AI Dermatologist Web App",
@@ -48,7 +48,7 @@ export const SOCIAL_LINKS: SocialLinksType[] = [
   { href: "https://github.com/Sheeza-Qamar", Icon: <IoLogoGithub size={25} /> },
   { href: "https://www.linkedin.com/in/sheeza-qamar/", Icon: <BsLinkedin size={25} color="#0a66c2" /> },
 ];
-export const SKILLS = [
+export const SKILLS: SkillType[] = [
   {
     img: "/images/skills/react.png",
     title: "React JS"

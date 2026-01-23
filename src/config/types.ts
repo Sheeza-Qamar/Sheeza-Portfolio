@@ -11,3 +11,8 @@ export interface SocialLinksType {
     href: string;
     Icon: any
 }
+export interface SkillType {
+    img: string;
+    imgDark?: string;
+    title: string;
+}
