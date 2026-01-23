@@ -1,0 +1,34 @@
+import { Footer, NavBar } from "@/components";
+import { ThemeSwitcherProvider } from "@/hooks/useThemeSwitcher";
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+import "./globals.css";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-mont",
+});
+
+export const metadata: Metadata = {
+  title: "Sheeza Qamar",
+  description: "Software Developer",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+
+  return (
+    <ThemeSwitcherProvider>
+      <html lang="en">
+        <body className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
+          <NavBar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ThemeSwitcherProvider>
+  );
+}
