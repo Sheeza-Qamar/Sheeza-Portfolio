@@ -34,7 +34,7 @@ export const Projects = () => {
                 xl:px-16 lg:px-12 md:px-10 sm:px-8 px-0">
                     {FEATURED_PROJECTS.map(
                         ({ github, img, link, summary, title, tech }, i) => (
-                            <motion.div key={link + i} className="col-span-12"
+                            <motion.div key={link || github + i} className="col-span-12"
                                 variants={fadeInAnimationVariants}
                                 initial="initial"
                                 whileInView="animate"
