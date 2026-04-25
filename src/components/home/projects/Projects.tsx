@@ -30,11 +30,10 @@ export const Projects = () => {
                     text="My Work"
                     className="mb-16 lg:!text-8xl md:!text-7xl !text-6xl"
                 />
-                <div className="grid grid-cols-12 xl:gap-x-24 gap-y-24 lg:gap-x-16 md:gap-x-8 sm:gap-y-20 gap-x-0 
-                xl:px-16 lg:px-12 md:px-10 sm:px-8 px-0">
+                <div className="grid grid-cols-1 gap-y-16 xl:px-12 lg:px-8 md:px-6 px-0">
                     {FEATURED_PROJECTS.map(
                         ({ github, img, link, summary, title, tech }, i) => (
-                            <motion.div key={link || github + i} className="col-span-12"
+                            <motion.div key={link || github + i} className="w-full"
                                 variants={fadeInAnimationVariants}
                                 initial="initial"
                                 whileInView="animate"

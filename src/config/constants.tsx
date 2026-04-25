@@ -5,12 +5,36 @@ import { LuGraduationCap } from "react-icons/lu";
 import { ExperienceProps, SocialLinksType, SkillType } from "./types";
 export const FEATURED_PROJECTS = [
   {
+    title: "Premium Beverages ERP Dashboard",
+    img: "/images/projects/premium-beverages-dashboard.png",
+    summary:
+      "Built a production-grade ERP dashboard for Premium Beverages using Next.js and TypeScript, covering clients, inventory, production, orders, billing, payments recovery, ledger, and expense management with JWT-based authentication and secure MySQL integration.",
+    github: "https://github.com/Sheeza-Qamar/Premium-Beverages/tree/main/nextjs-admin-dashboard-main/nextjs-admin-dashboard-main",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL", "JWT"],
+  },
+  {
     title: "AI Dermatologist Web App",
     img: "/images/projects/home page.png",
     summary:
       "AI Dermatologist preict skin diseases, Give answer to related queries, Medicine Recommendation, Appointment Booking with physical Doctors, Real time chat between doctor and patient.",
     github: "https://github.com/Sheeza-Qamar/AI-Dermatologist",
     tech: ["React", "Node", "Express", "PostgreSQL", "ML"],
+  },
+  {
+    title: "EasyGhar",
+    img: "/images/projects/easyghar.png",
+    summary:
+      "Developed a home services booking platform that connects households with labor workers, with an on-demand matching flow and a production-ready backend powered by Express and MySQL hosted on Aiven.",
+    github: "https://github.com/Sheeza-Qamar/EasyGhar",
+    tech: ["React", "Express", "MySQL", "Aiven", "JavaScript"],
+  },
+  {
+    title: "Career Intelligence Platform",
+    img: "/images/projects/career-intelligence-platform.png",
+    summary:
+      "Built an AI-powered career platform with job fitness analysis, ATS score checking, ATS resume generation from templates, and automated LinkedIn/Indeed job discovery by role and location with direct apply support.",
+    github: "https://github.com/Sheeza-Qamar/Career_intelligence_platform",
+    tech: ["React", "Node.js", "Python", "NLP", "Web Scraping"],
   },
   {
     title: "Recipie Finder Web App",
