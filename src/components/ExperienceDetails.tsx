@@ -18,8 +18,8 @@ const ExperienceDetails: React.FC<ExperienceProps> = ({ title, company, period, 
         {period}
       </p>
       {duration && (
-        <span className="dark:text-white text-black  text-sm mt-1 tracking-wide">
-          Duration: {duration}
+        <span className="block dark:text-[#c9c9c9] text-gray-600 text-sm mt-1 tracking-wide">
+          ({duration})
         </span>
       )}
       <ul className="mt-6 flex flex-col gap-3">

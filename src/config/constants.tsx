@@ -41,6 +41,7 @@ export const FEATURED_PROJECTS = [
 export const NAV_LINKS = [
   { title: "Home", link: "/" },
   { title: "Skills", link: "#skills" },
+  { title: "Experience", link: "#experience" },
   { title: "Education", link: "#education" },
   { title: "Projects", link: "#projects" },
 ];
@@ -124,6 +125,31 @@ export const EDUCATION_DATA = [
   },
 ]
 export const EXPERIENCE_DATA: ExperienceProps[] = [
+  {
+    id: "PAFFullStackDeveloper",
+    title: "Full Stack Developer",
+    company: "Pakistan Air Force (PAF)",
+    label: "Full Stack Developer",
+    period: "Feb 2026 - Present",
+    details: [
+      "Working full-time on end-to-end web application development across frontend and backend systems.",
+      "Built and maintained scalable frontend modules using Angular and React for internal platforms.",
+      "Developed backend services and APIs using Spring Boot and .NET to support core business workflows."
+    ]
+  },
+  {
+    id: "DaimbooLabsAIAutomation",
+    title: "AI Agents & Automation Engineer",
+    company: "Daimboo Labs",
+    label: "AI Agents & Automation",
+    period: "Jan 2026 - Present",
+    duration: "Part-Time",
+    details: [
+      "Built and maintained AI agent and automation workflows for business operations as a part-time contributor.",
+      "Created end-to-end automations using n8n, Zapier, and Make.com to connect tools and reduce manual tasks.",
+      "Implemented Vapi agent-calling flows and integrated voice agents into customer interaction pipelines."
+    ]
+  },
   {
     id: 'FreelanceFullStack',
     title: "Freelance Full Stack Developer",
