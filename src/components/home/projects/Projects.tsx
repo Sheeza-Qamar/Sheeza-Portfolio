@@ -2,6 +2,7 @@
 import { AnimatedText, Layout } from "@/components";
 import { FEATURED_PROJECTS } from "@/config/constants";
 import { motion } from "framer-motion";
+import { useMemo, useState } from "react";
 import FeaturedProjects from "./FeaturedProjects";
 
 const fadeInAnimationVariants = {
@@ -19,7 +20,20 @@ const fadeInAnimationVariants = {
     }),
 }
 
+const PROJECT_FILTERS = [
+    { id: "all", label: "All Projects" },
+    { id: "development", label: "Development" },
+    { id: "automation", label: "AI Agents & Automation" },
+];
+
 export const Projects = () => {
+    const [activeFilter, setActiveFilter] = useState("all");
+
+    const filteredProjects = useMemo(() => {
+        if (activeFilter === "all") return FEATURED_PROJECTS;
+        return FEATURED_PROJECTS.filter((project: any) => project.category === activeFilter);
+    }, [activeFilter]);
+
     return (
         <section
             id="projects"
@@ -30,8 +44,24 @@ export const Projects = () => {
                     text="My Work"
                     className="mb-16 lg:!text-8xl md:!text-7xl !text-6xl"
                 />
+                <div className="mb-10 flex flex-wrap justify-center gap-3">
+                    {PROJECT_FILTERS.map((filter) => (
+                        <button
+                            key={filter.id}
+                            type="button"
+                            onClick={() => setActiveFilter(filter.id)}
+                            className={`px-4 py-2 rounded-full border text-sm sm:text-base transition-all duration-200
+                            ${activeFilter === filter.id
+                                    ? "bg-black text-white dark:bg-white dark:text-black border-transparent"
+                                    : "bg-transparent text-black dark:text-white border-gray-500 hover:border-black dark:hover:border-white"
+                                }`}
+                        >
+                            {filter.label}
+                        </button>
+                    ))}
+                </div>
                 <div className="grid grid-cols-1 gap-y-16 xl:px-12 lg:px-8 md:px-6 px-0">
-                    {FEATURED_PROJECTS.map(
+                    {filteredProjects.map(
                         ({ github, img, images, link, summary, title, tech }, i) => (
                             <motion.div key={link || github + i} className="w-full"
                                 variants={fadeInAnimationVariants}

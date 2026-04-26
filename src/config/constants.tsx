@@ -6,6 +6,7 @@ import { ExperienceProps, SocialLinksType, SkillType } from "./types";
 export const FEATURED_PROJECTS = [
   {
     title: "Automated Aviation Document Processing & Generation",
+    category: "automation",
     img: "/images/projects/aviation-automation-banner.png",
     images: [
       "/images/projects/aviation-automation-1.png",
@@ -20,6 +21,7 @@ export const FEATURED_PROJECTS = [
   },
   {
     title: "Premium Beverages ERP Dashboard",
+    category: "development",
     img: "/images/projects/premium-beverages-dashboard.png",
     summary:
       "Built a production-grade ERP dashboard for Premium Beverages using Next.js and TypeScript, covering clients, inventory, production, orders, billing, payments recovery, ledger, and expense management with JWT-based authentication and secure MySQL integration.",
@@ -28,6 +30,7 @@ export const FEATURED_PROJECTS = [
   },
   {
     title: "AI Dermatologist Web App",
+    category: "development",
     img: "/images/projects/home page.png",
     summary:
       "AI Dermatologist preict skin diseases, Give answer to related queries, Medicine Recommendation, Appointment Booking with physical Doctors, Real time chat between doctor and patient.",
@@ -36,6 +39,7 @@ export const FEATURED_PROJECTS = [
   },
   {
     title: "EasyGhar",
+    category: "development",
     img: "/images/projects/easyghar.png",
     summary:
       "Developed a home services booking platform that connects households with labor workers, with an on-demand matching flow and a production-ready backend powered by Express and MySQL hosted on Aiven.",
@@ -44,6 +48,7 @@ export const FEATURED_PROJECTS = [
   },
   {
     title: "Career Intelligence Platform",
+    category: "development",
     img: "/images/projects/career-intelligence-platform.png",
     summary:
       "Built an AI-powered career platform with job fitness analysis, ATS score checking, ATS resume generation from templates, and automated LinkedIn/Indeed job discovery by role and location with direct apply support.",
@@ -52,6 +57,7 @@ export const FEATURED_PROJECTS = [
   },
   {
     title: "Recipie Finder Web App",
+    category: "development",
     img: "/images/projects/recipies.png",
     summary:
       "Built a responsive and mobile friendly recipe finder website with search, filter and view details of recipe features. It processes 1000+ recipes data from CSV file which include recipes from different continents. Built pagination system and responsive design using Bootstrap ensuring smooth experience. ",
@@ -61,6 +67,7 @@ export const FEATURED_PROJECTS = [
   },
   {
     title: "Quran Reading App",
+    category: "development",
     img: "/images/projects/Quran.png",
     summary:
       "Developed a fully functional and optimized Quran Reading app using React Native. Integrated API for dynamic Quran data fetching, including Surahs and Ayahs with their translation. Implemented search functionality for specific Surahs or Ayahs and used AsyncStorage to enable offline access. Added customizable settings for font size and color mode (light/dark themes).  ",
@@ -69,6 +76,7 @@ export const FEATURED_PROJECTS = [
   },
   {
     title: "Doctor Appointment Booking App",
+    category: "development",
     img: "/images/projects/doc.jpeg",
     summary:
       "Developed a mobile based doctor appointment booking app using React Native. Allows patients to book appointment with registered doctors based on availability. Integrated Supabase for backend services including authentication, data storage. Secured API routes and enhanced backend performance using Express.js middleware. ",
