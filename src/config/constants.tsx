@@ -5,6 +5,20 @@ import { LuGraduationCap } from "react-icons/lu";
 import { ExperienceProps, SocialLinksType, SkillType } from "./types";
 export const FEATURED_PROJECTS = [
   {
+    title: "Automated Aviation Document Processing & Generation",
+    img: "/images/projects/aviation-automation-banner.png",
+    images: [
+      "/images/projects/aviation-automation-1.png",
+      "/images/projects/aviation-automation-2.png",
+      "/images/projects/aviation-automation-3.png",
+      "/images/projects/aviation-automation-4.png",
+      "/images/projects/aviation-automation-5.png",
+    ],
+    summary:
+      "Built a Zapier-powered AI automation pipeline for private jet charter requests that structures unorganized inputs, enriches request data, generates multi-template client-ready PDFs, routes files to e-sign workflows, and updates status in real time, reducing a 2-3 hour manual process to minutes.",
+    tech: ["Zapier", "Google Sheets", "Google Drive", "ChatGPT", "PDFMonkey", "SignNow"],
+  },
+  {
     title: "Premium Beverages ERP Dashboard",
     img: "/images/projects/premium-beverages-dashboard.png",
     summary:
