@@ -31,7 +31,10 @@ export const Projects = () => {
 
     const filteredProjects = useMemo(() => {
         if (activeFilter === "all") return FEATURED_PROJECTS;
-        return FEATURED_PROJECTS.filter((project: any) => project.category === activeFilter);
+        return FEATURED_PROJECTS.filter((project: any) => {
+            const normalizedCategory = project.category ?? "development";
+            return normalizedCategory === activeFilter;
+        });
     }, [activeFilter]);
 
     return (
@@ -60,32 +63,38 @@ export const Projects = () => {
                         </button>
                     ))}
                 </div>
-                <div className="grid grid-cols-1 gap-y-16 xl:px-12 lg:px-8 md:px-6 px-0">
-                    {filteredProjects.map(
-                        ({ github, img, images, link, summary, title, tech }, i) => (
-                            <motion.div key={link || github + i} className="w-full"
-                                variants={fadeInAnimationVariants}
-                                initial="initial"
-                                whileInView="animate"
-                                viewport={{
-                                    once: true,
-                                }}
-                                custom={i}
-                            >
-                                <FeaturedProjects
-                                    title={title}
-                                    img={img}
-                                    images={images}
-                                    summary={summary}
-                                    link={link}
-                                    github={github}
-                                    tech={tech}
-                                    index={i}
-                                />
-                            </motion.div>
-                        )
-                    )}
-                </div>
+                {filteredProjects.length === 0 ? (
+                    <div className="text-center py-12 dark:text-[#c9c9c9] text-gray-700">
+                        No projects found in this category.
+                    </div>
+                ) : (
+                    <div className="grid grid-cols-1 gap-y-16 xl:px-12 lg:px-8 md:px-6 px-0">
+                        {filteredProjects.map(
+                            ({ github, img, images, link, summary, title, tech }, i) => (
+                                <motion.div key={`${link ?? github ?? title}-${i}`} className="w-full"
+                                    variants={fadeInAnimationVariants}
+                                    initial="initial"
+                                    whileInView="animate"
+                                    viewport={{
+                                        once: true,
+                                    }}
+                                    custom={i}
+                                >
+                                    <FeaturedProjects
+                                        title={title}
+                                        img={img}
+                                        images={images}
+                                        summary={summary}
+                                        link={link}
+                                        github={github}
+                                        tech={tech}
+                                        index={i}
+                                    />
+                                </motion.div>
+                            )
+                        )}
+                    </div>
+                )}
             </Layout>
         </section>
     );

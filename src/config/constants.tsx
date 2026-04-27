@@ -5,6 +5,19 @@ import { LuGraduationCap } from "react-icons/lu";
 import { ExperienceProps, SocialLinksType, SkillType } from "./types";
 export const FEATURED_PROJECTS = [
   {
+    title: "Emily - AI Voice Receptionist for Appointment Booking",
+    category: "automation",
+    img: "/images/projects/emily-voice-agent-1.png",
+    images: [
+      "/images/projects/emily-voice-agent-1.png",
+      "/images/projects/emily-voice-agent-2.png",
+      "/images/projects/emily-voice-agent-3.png",
+    ],
+    summary:
+      "Built a production-style AI voice receptionist for a dental clinic using Vapi and n8n that answers calls, understands intent, checks live Google Calendar availability, handles conflicts, captures patient details, and books confirmed appointments automatically with timezone-safe scheduling.",
+    tech: ["Vapi", "n8n", "Google Calendar API", "LLM Tool Calling", "Webhook Automation"],
+  },
+  {
     title: "Automated Aviation Document Processing & Generation",
     category: "automation",
     img: "/images/projects/aviation-automation-banner.png",
