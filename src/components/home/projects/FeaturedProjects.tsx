@@ -32,7 +32,7 @@ const FeaturedProjects = ({ title, summary, img, images, link, github, tech, thu
                         setActiveImageIndex(0);
                         setIsPreviewOpen(true);
                     }}
-                    className="block overflow-hidden rounded-lg w-full"
+                    className="group block overflow-hidden rounded-lg w-full relative"
                 >
                     <FramerImage
                         src={img}
@@ -45,6 +45,16 @@ const FeaturedProjects = ({ title, summary, img, images, link, github, tech, thu
                         priority
                         sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 50vw"
                     />
+                    {projectImages.length > 1 && (
+                        <>
+                            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-black/70 text-white text-xs sm:text-sm tabular-nums tracking-wide">
+                                1 / {projectImages.length}
+                            </div>
+                            <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-full bg-black/70 text-white text-xs sm:text-sm opacity-95 group-hover:opacity-100">
+                                Open gallery
+                            </div>
+                        </>
+                    )}
                 </button>
             </div>
             {isPreviewOpen && (
