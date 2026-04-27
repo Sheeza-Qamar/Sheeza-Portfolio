@@ -70,7 +70,7 @@ export const Projects = () => {
                 ) : (
                     <div className="grid grid-cols-1 gap-y-16 xl:px-12 lg:px-8 md:px-6 px-0">
                         {filteredProjects.map(
-                            ({ github, img, images, link, summary, title, tech }, i) => (
+                            ({ github, img, images, link, summary, title, tech, thumbFit }, i) => (
                                 <motion.div key={`${link ?? github ?? title}-${i}`} className="w-full"
                                     variants={fadeInAnimationVariants}
                                     initial="initial"
@@ -88,6 +88,7 @@ export const Projects = () => {
                                         link={link}
                                         github={github}
                                         tech={tech}
+                                        thumbFit={thumbFit}
                                         index={i}
                                     />
                                 </motion.div>

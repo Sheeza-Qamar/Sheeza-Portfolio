@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 const FramerLink = motion(Link);
 const FramerImage = motion(Image);
-const FeaturedProjects = ({ title, summary, img, images, link, github, tech, index }: any) => {
+const FeaturedProjects = ({ title, summary, img, images, link, github, tech, thumbFit, index }: any) => {
     const projectImages = images?.length ? images : [img];
     const [activeImageIndex, setActiveImageIndex] = useState(0);
     const [isPreviewOpen, setIsPreviewOpen] = useState(false);
@@ -39,7 +39,7 @@ const FeaturedProjects = ({ title, summary, img, images, link, github, tech, ind
                         alt={`${title} banner`}
                         width={1200}
                         height={700}
-                        className="w-full h-52 md:h-64 object-cover"
+                        className={`w-full h-52 md:h-64 ${thumbFit === "contain" ? "object-contain bg-black" : "object-cover"}`}
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.2 }}
                         priority

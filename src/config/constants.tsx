@@ -7,7 +7,8 @@ export const FEATURED_PROJECTS = [
   {
     title: "Emily - AI Voice Receptionist for Appointment Booking",
     category: "automation",
-    img: "/images/projects/emily-voice-agent-1.png",
+    img: "/images/projects/emily-voice-agent-thumb.png",
+    thumbFit: "contain",
     images: [
       "/images/projects/emily-voice-agent-1.png",
       "/images/projects/emily-voice-agent-2.png",
