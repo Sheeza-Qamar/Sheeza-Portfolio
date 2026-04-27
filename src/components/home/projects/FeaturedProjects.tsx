@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 const FramerLink = motion(Link);
 const FramerImage = motion(Image);
@@ -120,21 +121,40 @@ const FeaturedProjects = ({ title, summary, img, images, link, github, tech, thu
                         )
                     )}
                 </div>
-                {github && (
-                    <div className="flex items-center mt-2 gap-x-4">
-                        <FramerLink
-                            href={github}
-                            target="_blank"
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.9 }}
-                        >
-                            <div className="flex gap-x-2 group items-center">
-                                <p className="py-2 font-medium text-dark dark:text-light text-sm sm:text-base group-hover:text-[#1B9CFC]">
-                                    Code
-                                </p>
-                                <FaGithub size={15} className="group-hover:text-[#1B9CFC]" />
-                            </div>
-                        </FramerLink>
+                {(link || github) && (
+                    <div className="flex flex-wrap items-center mt-2 gap-x-8 gap-y-2">
+                        {link && (
+                            <FramerLink
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                <div className="flex gap-x-2 group items-center">
+                                    <p className="py-2 font-medium text-dark dark:text-light text-sm sm:text-base group-hover:text-[#1B9CFC]">
+                                        Live demo
+                                    </p>
+                                    <HiOutlineExternalLink size={18} className="group-hover:text-[#1B9CFC]" />
+                                </div>
+                            </FramerLink>
+                        )}
+                        {github && (
+                            <FramerLink
+                                href={github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                <div className="flex gap-x-2 group items-center">
+                                    <p className="py-2 font-medium text-dark dark:text-light text-sm sm:text-base group-hover:text-[#1B9CFC]">
+                                        Code
+                                    </p>
+                                    <FaGithub size={15} className="group-hover:text-[#1B9CFC]" />
+                                </div>
+                            </FramerLink>
+                        )}
                     </div>
                 )}
             </div>

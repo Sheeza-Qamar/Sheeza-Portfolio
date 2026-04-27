@@ -8,6 +8,7 @@ export const FEATURED_PROJECTS = [
     title: "Emily - AI Voice Receptionist for Appointment Booking",
     category: "automation",
     img: "/images/projects/emily-voice-agent-thumb.png",
+    link: "https://www.linkedin.com/posts/sheeza-qamar_automation-n8n-aivoice-ugcPost-7428750180574908417-7Wr6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADwg4coBxVta-WA8LJmDpPc_xMcAKKhV3qY",
     thumbFit: "contain",
     images: [
       "/images/projects/emily-voice-agent-1.png",
