@@ -5,6 +5,15 @@ import { LuGraduationCap } from "react-icons/lu";
 import { ExperienceProps, SocialLinksType, SkillType } from "./types";
 export const FEATURED_PROJECTS = [
   {
+    title: "Premium Beverages ERP Dashboard",
+    category: "development",
+    img: "/images/projects/premium-beverages-dashboard.png",
+    summary:
+      "Built a production-grade ERP dashboard for Premium Beverages using Next.js and TypeScript, covering clients, inventory, production, orders, billing, payments recovery, ledger, and expense management with JWT-based authentication and secure MySQL integration.",
+    github: "https://github.com/Sheeza-Qamar/Premium-Beverages/tree/main/nextjs-admin-dashboard-main/nextjs-admin-dashboard-main",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL", "JWT"],
+  },
+  {
     title: "LinkedIn Post Automation using n8n",
     category: "automation",
     img: "/images/projects/linkedin-post-automation.png",
@@ -42,15 +51,6 @@ export const FEATURED_PROJECTS = [
     summary:
       "Built a Zapier-powered AI automation pipeline for private jet charter requests that structures unorganized inputs, enriches request data, generates multi-template client-ready PDFs, routes files to e-sign workflows, and updates status in real time, reducing a 2-3 hour manual process to minutes.",
     tech: ["Zapier", "Google Sheets", "Google Drive", "ChatGPT", "PDFMonkey", "SignNow"],
-  },
-  {
-    title: "Premium Beverages ERP Dashboard",
-    category: "development",
-    img: "/images/projects/premium-beverages-dashboard.png",
-    summary:
-      "Built a production-grade ERP dashboard for Premium Beverages using Next.js and TypeScript, covering clients, inventory, production, orders, billing, payments recovery, ledger, and expense management with JWT-based authentication and secure MySQL integration.",
-    github: "https://github.com/Sheeza-Qamar/Premium-Beverages/tree/main/nextjs-admin-dashboard-main/nextjs-admin-dashboard-main",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL", "JWT"],
   },
   {
     title: "AI Dermatologist Web App",
