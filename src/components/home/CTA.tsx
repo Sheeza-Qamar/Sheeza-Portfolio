@@ -37,8 +37,7 @@ export const CTA = () => {
                             className="xl:!text-6xl lg:!text-left lg:!text-5xl !text-center md:!text-6xl sm:!text-5xl !text-4xl"
                         />
                         <p className="my-4 md:text-base font-medium sm:text-sm text-xs text-justify">
-                            I am a Computer Scientist with over 2 years of experience in various domains.
-                            My expertise includes web and mobile app development, Machine Learning, AI, and computer vision.
+                            Full Stack Developer with over 2+ years of experience building web and mobile applications across diverse industries, with expertise in AI agents, workflow automation, and scalable digital solutions.
                         </p>
                         <div className="flex items-center lg:self-start mt-2 self-center">
                             <Link
