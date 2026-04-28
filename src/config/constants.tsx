@@ -5,6 +5,15 @@ import { LuGraduationCap } from "react-icons/lu";
 import { ExperienceProps, SocialLinksType, SkillType } from "./types";
 export const FEATURED_PROJECTS = [
   {
+    title: "LinkedIn Post Automation using n8n",
+    category: "automation",
+    img: "/images/projects/linkedin-post-automation.png",
+    link: "https://www.linkedin.com/posts/sheeza-qamar_linkedinautomation-workflowautomation-aicontent-activity-7425259658598211586-AFwO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADwg4coBxVta-WA8LJmDpPc_xMcAKKhV3qY",
+    summary:
+      "Built an end-to-end LinkedIn publishing automation where new topics from Google Sheets trigger an n8n workflow that generates AI post content, publishes directly to LinkedIn, and updates publishing status automatically without manual copy-paste or scheduling overhead.",
+    tech: ["n8n", "Google Sheets", "LinkedIn", "AI Content Generation", "Workflow Automation"],
+  },
+  {
     title: "Emily - AI Voice Receptionist for Appointment Booking",
     category: "automation",
     img: "/images/projects/emily-voice-agent-thumb.png",
