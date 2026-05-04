@@ -137,6 +137,18 @@ export const SKILLS: SkillType[] = [
     title: "FastAPI"
   },
   {
+    img: "/images/skills/n8n.svg",
+    title: "n8n"
+  },
+  {
+    img: "/images/skills/zapier.svg",
+    title: "Zapier"
+  },
+  {
+    img: "/images/skills/make.svg",
+    title: "Make.com"
+  },
+  {
     img: "/images/skills/node.png",
     title: "Node JS"
   },
