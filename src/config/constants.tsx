@@ -141,14 +141,6 @@ export const SKILLS: SkillType[] = [
     title: "Node JS"
   },
   {
-    img: "/images/skills/tensorflow.svg",
-    title: "TensorFlow"
-  },
-  {
-    img: "/images/skills/pandas.png",
-    title: "Pandas"
-  },
-  {
     img: "/images/skills/numpy.svg",
     title: "Numpy"
   },
