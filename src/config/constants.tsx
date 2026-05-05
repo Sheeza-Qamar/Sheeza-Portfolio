@@ -217,7 +217,7 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     company: "Daimboo Labs",
     label: "AI Agents & Automation",
     period: "Jan 2026 - Present",
-    duration: "Part-Time",
+    duration: "Remote",
     details: [
       "Built and maintained AI agent and automation workflows for business operations as a part-time contributor.",
       "Created end-to-end automations using n8n, Zapier, and Make.com to connect tools and reduce manual tasks.",
