@@ -129,6 +129,10 @@ export const SKILLS: SkillType[] = [
     title: "Javascript"
   },
   {
+    img: "/images/skills/mysql.svg",
+    title: "MySQL"
+  },
+  {
     img: "/images/skills/python.png",
     title: "Python"
   },
