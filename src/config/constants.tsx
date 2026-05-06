@@ -157,6 +157,10 @@ export const SKILLS: SkillType[] = [
     title: "Node JS"
   },
   {
+    img: "/images/skills/springboot.svg",
+    title: "Spring Boot"
+  },
+  {
     img: "/images/skills/numpy.svg",
     title: "Numpy"
   },
