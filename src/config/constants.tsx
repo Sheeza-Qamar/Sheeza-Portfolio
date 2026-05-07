@@ -32,7 +32,7 @@ export const FEATURED_PROJECTS = [
       "/images/projects/seda-social-automation-thumb.png",
     ],
     summary:
-      "Built an automated n8n workflow that generates 180 daily social media posts (30 per user) for 6 users across 6 categories like Technology, Health, Business, and Science. Integrated GPT-4o for viral research-question generation and GPT-5.1 for caption refinement, with outputs synced to Google Sheets and refreshed daily through scheduled triggers.",
+      "Built an automated n8n workflow for SEDA APP that generates 180 daily social media posts (30 per user) for 6 users across 6 categories like Technology, Health, Business, and Science. Integrated GPT-4o for viral research-question generation and GPT-5.1 for caption refinement, with outputs synced to Google Sheets and refreshed daily through scheduled triggers.",
     tech: ["n8n", "GPT-4o", "GPT-5.1", "Google Sheets", "Workflow Automation"],
   },
   {
