@@ -178,10 +178,6 @@ export const SKILLS: SkillType[] = [
     title: "PostgreSQL"
   },
   {
-    img: "/images/skills/mongodb.png",
-    title: "Mongo DB"
-  },
-  {
     img: "/images/skills/sql.png",
     title: "SQL"
   },
