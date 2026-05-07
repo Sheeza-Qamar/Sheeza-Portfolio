@@ -23,6 +23,19 @@ export const FEATURED_PROJECTS = [
     tech: ["n8n", "Google Sheets", "LinkedIn", "AI Content Generation", "Workflow Automation"],
   },
   {
+    title: "AI-Powered Social Media Content Automation",
+    category: "automation",
+    img: "/images/projects/seda-social-automation-thumb.png",
+    thumbFit: "contain",
+    images: [
+      "/images/projects/seda-social-automation-workflow.png",
+      "/images/projects/seda-social-automation-thumb.png",
+    ],
+    summary:
+      "Built an automated n8n workflow that generates 180 daily social media posts (30 per user) for 6 users across 6 categories like Technology, Health, Business, and Science. Integrated GPT-4o for viral research-question generation and GPT-5.1 for caption refinement, with outputs synced to Google Sheets and refreshed daily through scheduled triggers.",
+    tech: ["n8n", "GPT-4o", "GPT-5.1", "Google Sheets", "Workflow Automation"],
+  },
+  {
     title: "Emily - AI Voice Receptionist for Appointment Booking",
     category: "automation",
     img: "/images/projects/emily-voice-agent-thumb.png",
