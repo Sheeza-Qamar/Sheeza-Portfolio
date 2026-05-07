@@ -133,10 +133,6 @@ export const SKILLS: SkillType[] = [
     title: "MySQL"
   },
   {
-    img: "/images/skills/python.png",
-    title: "Python"
-  },
-  {
     img: "/images/skills/fastApi.png",
     title: "FastAPI"
   },
@@ -195,6 +191,10 @@ export const SKILLS: SkillType[] = [
   {
     img: "/images/skills/cpp.png",
     title: "CPP"
+  },
+  {
+    img: "/images/skills/python.png",
+    title: "Python"
   }
 ]
 export const EDUCATION_DATA = [
